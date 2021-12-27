@@ -99,26 +99,11 @@ class RecursiveCascadedNetworks(Network):
                                 tf.float32, [1, 3, 3])
                 stem_result['agg_flow'] = tf.einsum(
                     'bij,bxyzj->bxyzi', stem_results[-1]['W'] + I, stem_result['flow']) + stem_results[-1]['flow']
-                if self.use_deepSuv:
-                    stem_result['agg_flow_0'] =tf.einsum(
-                    'bij,bxyzj->bxyzi', stem_results[-1]['W'] + I, stem_result['flow_0']) + stem_results[-1]['flow_0']
-                    stem_result['agg_flow_1'] =tf.einsum(
-                    'bij,bxyzj->bxyzi', stem_results[-1]['W'] + I, stem_result['flow_1']) + stem_results[-1]['flow_1']
-                    stem_result['agg_flow_2'] = tf.einsum(
-                    'bij,bxyzj->bxyzi', stem_results[-1]['W'] + I, stem_result['flow_2']) + stem_results[-1]['flow_2']
 
             else:
                 stem_result['agg_flow'] = self.reconstruction(
                     [stem_results[-1]['agg_flow'], stem_result['flow']]) + stem_result['flow']
-                if self.use_deepSuv:
-                    stem_result['agg_flow_0'] = self.reconstruction(
-                    [stem_results[-1]['agg_flow_0'], stem_result['flow_0']]) + stem_result['flow_0']
-                    stem_result['agg_flow_1'] = self.reconstruction(
-                    [stem_results[-1]['agg_flow_1'], stem_result['flow_1']]) + stem_result['flow_1']
-                    stem_result['agg_flow_2'] = self.reconstruction(
-                    [stem_results[-1]['agg_flow_2'], stem_result['flow_2']]) + stem_result['flow_2']
-
-
+                
             stem_result['warped'] = self.reconstruction(
                 [img2, stem_result['agg_flow']])
             

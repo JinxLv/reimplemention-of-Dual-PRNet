@@ -22,7 +22,7 @@ python predict.py -g 0 --batch 1 -d datasets/brain.json -c weights/Dec09-1849
 ```
 
 ## LPBA dataset
-We use the same training and testing data as [RCN](https://github.com/microsoft/Recursive-Cascaded-Networks),please refer to their repository to download the pre-processed data.
+We use the same training and testing data as [RCN](https://github.com/microsoft/Recursive-Cascaded-Networks), please refer to their repository to download the pre-processed data.
 
 ## Acknowledgment
 

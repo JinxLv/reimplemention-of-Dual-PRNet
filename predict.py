@@ -101,7 +101,7 @@ def main():
         val_subsets = args.val_subset.split(',')
     
     tflearn.is_training(False, session=sess)
-    writebook = xlwt.Workbook()                #打开excel
+    writebook = xlwt.Workbook()
     testSheet1= writebook.add_sheet('dice')
     keys = ['image_fixed','moving_img','warped_moving','seg_fixed','warped_seg_moving','real_flow','total_mse','total_ncc','jaccs','landmark_dists','jacobian_det','dices']#'image_fixed','warped_moving','seg_fixed','warped_seg_moving','jaccs','landmark_dists','jacobian_det',
     if not os.path.exists('evaluate'):

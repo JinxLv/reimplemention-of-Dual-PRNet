@@ -27,7 +27,7 @@ We use the same training and testing data as [RCN](https://github.com/microsoft/
 
 ## Results
 
-Method |Dice | HD | assd |
+Method |Dice | HD | ASSD |
 ---|:-:|:-:|:-:|
 Original [Dual-PRNet](https://arxiv.org/abs/1909.11966) | 0.778 | -	| - |
 Our re-implemented Dual-PRNet | 0.831±0.008 | 3.457±0.297 | 0.811±0.046

@@ -32,6 +32,10 @@ Method |Dice | HD | assd |
 Original Dual-PRNet | 0.778 | -	| - |
 Our re-implemented Dual-PRNet | 0.831±0.008 | 3.457±0.297 | 0.811±0.046
 
+We have tried to follow [Dual-PRNet](https://arxiv.org/abs/1909.11966) to merge 56 regions into 7, and the merged 7 regions and the corresponding [label IDs](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2757616/) of functional areas in each merged region are shown in figure below.
+
+![merge](./Figure/merge_scheme.png)
+
 ## Acknowledgment
 
 Some codes are modified from [RCN](https://github.com/microsoft/Recursive-Cascaded-Networks) and [VoxelMorph](https://github.com/voxelmorph/voxelmorph).

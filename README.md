@@ -28,7 +28,7 @@ We use the same training and testing data as [RCN](https://github.com/microsoft/
 ## Results
 
 Method |Dice | HD | ASSD |Jacobian Std. | Folding (%) |
----|:-:|:-:|:-:|:-:|:-:|
+---|:-:|:-:|:-:|---|---|
 Original [Dual-PRNet](https://arxiv.org/abs/1909.11966) | 0.778 | -	| - | -	| - |
 Our re-implemented Dual-PRNet | 0.831±0.008 | 3.457±0.297 | 0.811±0.046 | 0.906±0.059 | 1.61e-1±2.44e-2|
 [VoxelMorph](https://arxiv.org/pdf/1809.05231.pdf) | 0.820±0.008 | 3.648±0.284	| 0.892±0.047 | 0.247±0.057	| 5.15e-3±6.80e-3 |

@@ -29,7 +29,7 @@ We use the same training and testing data as [RCN](https://github.com/microsoft/
 
 Method |Dice | HD | assd |
 ---|:-:|:-:|:-:|
-Original Dual-PRNet | 0.778 | -	| - |
+Original [Dual-PRNet](https://arxiv.org/abs/1909.11966) | 0.778 | -	| - |
 Our re-implemented Dual-PRNet | 0.831±0.008 | 3.457±0.297 | 0.811±0.046
 [VoxelMorph](https://arxiv.org/pdf/1809.05231.pdf) | 0.820±0.008 | 3.648±0.284	| 0.892±0.047 |
 [VTN](https://arxiv.org/pdf/1902.05020.pdf) | 0.825±0.008 | 3.584±0.265 | 0.925±0.047

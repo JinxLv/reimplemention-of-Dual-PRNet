@@ -25,6 +25,13 @@ python predict.py -g 0 --batch 1 -d datasets/brain.json -c weights/Dec09-1849
 ## LPBA dataset
 We use the same training and testing data as [RCN](https://github.com/microsoft/Recursive-Cascaded-Networks), please refer to their repository to download the pre-processed data.
 
+## Results
+
+Method |Dice | HD | assd |
+---|:-:|:-:|:-:|
+Original Dual-PRNet | 0.778 | -	| - |
+Our re-implemented Dual-PRNet | 0.831±0.008 | 3.457±0.297 | 0.811±0.046
+
 ## Acknowledgment
 
 Some codes are modified from [RCN](https://github.com/microsoft/Recursive-Cascaded-Networks) and [VoxelMorph](https://github.com/voxelmorph/voxelmorph).

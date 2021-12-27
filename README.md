@@ -3,7 +3,7 @@
 This is a Tensorflow reimplemention of [Dual-Stream Pyramid Registration Network](https://arxiv.org/abs/1909.11966)
 
 ## Install
-The package and their corresponding version we used in this repository are listed in below.
+The packages and their corresponding version we used in this repository are listed in below.
 
 - Tensorflow==1.15.4
 - Keras==2.3.1

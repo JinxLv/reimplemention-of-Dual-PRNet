@@ -4,9 +4,10 @@ This is a Tensorflow reimplemention of [Dual-Stream Pyramid Registration Network
 
 ## Install
 The package and their corresponding version we used in this repository are listed in below.
-Tensorflow==1.15.4
-Keras==2.3.1
-tflearn==0.5.0
+
+- Tensorflow==1.15.4
+- Keras==2.3.1
+- tflearn==0.5.0
 
 ## Training
 After configuring the environment, please use this command to train the model.
